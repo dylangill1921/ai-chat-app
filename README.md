@@ -82,4 +82,30 @@ npm run dev
 
 ## 📸 Usage
 
-1. Register an account or l
+1. Register an account or login
+2. Join a chat room
+3. Send messages in real-time
+4. Type `/ai your question` to get an AI response in the chat
+
+## 📁 Project Structure
+
+\```
+ai-chat-app/
+├── client/                 # React frontend
+│   └── src/
+│       ├── pages/
+│       │   ├── Auth.jsx    # Login/Register
+│       │   ├── Rooms.jsx   # Room selection
+│       │   └── Chat.jsx    # Real-time chat
+│       └── App.jsx
+└── server/                 # Node.js backend
+    ├── routes/
+    │   ├── auth.js         # Auth endpoints
+    │   └── rooms.js        # Room endpoints
+    ├── middleware/
+    │   └── auth.js         # JWT middleware
+    ├── prisma/
+    │   └── schema.prisma   # Database schema
+    ├── db.js               # Prisma client
+    └── index.js            # Server entry point
+\```
